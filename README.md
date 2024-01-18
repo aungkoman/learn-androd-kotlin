@@ -16,3 +16,12 @@ Image(
             modifier = Modifier.fillMaxSize().alpha(0.5F)
         )
 ```
+
+ကိုယ့်ရဲ့ Compose Widget က ဘယ်လောက် နေရာယူနေလဲ သိချင်ရင် modifier မှာ Background Color ထည့်ကြည့်လိုက်။
+
+```kotlin
+modifier = Modifier
+        .fillMaxSize()
+    .padding(8.dp)
+    .background(color = Color.Blue)
+```
