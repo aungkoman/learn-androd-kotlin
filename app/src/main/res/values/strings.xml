@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="happy_birthday">Happy Birthday</string>
+    <string name="by">By</string>
+    <string name="from_name">KM</string>
+    <string name="to_name">MSD</string>
 </resources>

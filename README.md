@@ -25,3 +25,8 @@ modifier = Modifier
     .padding(8.dp)
     .background(color = Color.Blue)
 ```
+
+
+#### String တွေကိုလည်း Resource အနေနဲ့ပဲ သုံးကြတယ်။
+
+stringResource(id = R.string.by)

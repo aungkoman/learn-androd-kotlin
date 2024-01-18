@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -57,15 +58,17 @@ fun BirthdayCard(from: String, to: String, modifier: Modifier=Modifier ) {
         modifier = modifier
     ) {
         Text(
-            text = "Happy Birthday $to",
+            text = stringResource(R.string.happy_birthday) + stringResource(R.string.to_name),
             fontSize = 100.sp,
             lineHeight = 106.sp,
             textAlign = TextAlign.Center
         )
         Text(
-            text = "By $from",
+            text = "${stringResource(id = R.string.by)} ${stringResource(id = R.string.from_name)}",
             fontSize = 36.sp,
-            modifier = Modifier.padding(8.dp).align(alignment = Alignment.End)
+            modifier = Modifier
+                .padding(8.dp)
+                .align(alignment = Alignment.End)
         )
     }
 }
@@ -89,7 +92,6 @@ fun GreetingImage() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(8.dp)
-                .background(color = Color.Blue)
         )
     }
 }
