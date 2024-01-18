@@ -68,7 +68,7 @@ fun BirthdayCard(from: String, to: String, modifier: Modifier=Modifier ) {
             fontSize = 36.sp,
             modifier = Modifier
                 .padding(8.dp)
-                .align(alignment = Alignment.End)
+                .align(alignment = Alignment.CenterHorizontally)
         )
     }
 }
